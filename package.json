@@ -1,0 +1,17 @@
+{
+  "name": "dymee-vercel-upload",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "esbuild static/src/blob-upload.js --bundle --minify --format=esm --outfile=static/js/blob-upload.js"
+  },
+  "dependencies": {
+    "@vercel/blob": "2.9.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}
